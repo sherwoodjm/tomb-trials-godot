@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bxd7khax44lqa"]
+
+[ext_resource type="Script" uid="uid://bs57si7yn0lq5" path="res://map.gd" id="1_iph6g"]
+[ext_resource type="TileSet" uid="uid://duu4rnss6bo0l" path="res://tilesets/desert_tomb.tres" id="2_xgsmj"]
+
+[node name="TestingGrounds" type="Node" unique_id=1846410118]
+script = ExtResource("1_iph6g")
+metadata/_custom_type_script = "uid://bs57si7yn0lq5"
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=196429357]
+color = Color(0.16206557, 0.1620656, 0.16206557, 1)
+polygon = PackedVector2Array(-64, 0, -24, 24, -104, 240)
+
+[node name="Area2D" type="CharacterBody2D" parent="Polygon2D" unique_id=1612319530]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Polygon2D/Area2D" unique_id=487284087]
+polygon = PackedVector2Array(-64, 0, -24, 24, -104, 240)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1427539472]
+tile_set = ExtResource("2_xgsmj")
