@@ -14,11 +14,14 @@ script = ExtResource("1_4flbx")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1718416824]
 texture = SubResource("PlaceholderTexture2D_hs3rx")
+centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2147215119]
+position = Vector2(8, 8)
 shape = SubResource("CircleShape2D_hs3rx")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=485084567]
 
 [node name="RayCast2D" type="RayCast2D" parent="." unique_id=232865697]
+position = Vector2(8, 8)
 target_position = Vector2(0, 16)
