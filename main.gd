@@ -6,15 +6,9 @@ var player = load(PLAYER_SCENE).instantiate()
 
 
 func _ready() -> void:
-	add_player_at_position()
-	Transition.fade_in(0.25)
-
-
-func add_player_at_position(_pos := Vector2.ZERO) -> void:
-	if _pos == Vector2.ZERO:
-		_pos = get_tree().current_scene.start_position
-	player.position = _pos
+	player.position = get_tree().current_scene.start_position
 	get_tree().current_scene.add_child(player)
+	Transition.fade_in(0.25)
 
 
 func teleport_player_to_position(pos) -> void:
