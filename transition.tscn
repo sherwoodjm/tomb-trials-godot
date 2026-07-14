@@ -44,6 +44,7 @@ script = ExtResource("1_k6ts2")
 
 [node name="Fade" type="CanvasLayer" parent="." unique_id=1275634357]
 process_mode = 3
+layer = 2
 
 [node name="ColorRect" type="ColorRect" parent="Fade" unique_id=1415129251]
 offset_right = 272.0

@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://c2vawe0akqqm4"]
+
+[ext_resource type="Script" uid="uid://dmk85oyqh5sof" path="res://dialogue.gd" id="1_758ep"]
+[ext_resource type="FontFile" uid="uid://bw20tikc1sopk" path="res://Not Jam Mono Clean 11.ttf" id="1_oi3j2"]
+[ext_resource type="Texture2D" uid="uid://8ebf8h3bxo" path="res://sprites/dialogue.png" id="2_758ep"]
+
+[sub_resource type="Theme" id="Theme_va5y1"]
+RichTextLabel/colors/default_color = Color(0.13333334, 0.13333334, 0.13333334, 1)
+RichTextLabel/fonts/normal_font = ExtResource("1_oi3j2")
+
+[node name="Dialogue" type="CanvasLayer" unique_id=1970777900]
+script = ExtResource("1_758ep")
+
+[node name="Control" type="Control" parent="." unique_id=1808147997]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 272.0
+offset_bottom = 240.0
+theme = SubResource("Theme_va5y1")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Control" unique_id=1056926194]
+layout_mode = 0
+offset_top = 168.0
+offset_right = 272.0
+offset_bottom = 240.0
+texture = ExtResource("2_758ep")
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 8
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/NinePatchRect" unique_id=1958954354]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_right = 4
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/NinePatchRect/MarginContainer" unique_id=1929775893]
+layout_mode = 2
+text = "This is a textbox with enough text to wrap around inside. Play it again."
+scroll_active = false
+
+[node name="Timer" type="Timer" parent="Control" unique_id=1578459358]

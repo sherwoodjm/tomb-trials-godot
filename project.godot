@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 
 Main="*uid://i0px8put1jcp"
 Transition="*uid://can7wjkw2i0w1"
+Dialogue="*uid://c2vawe0akqqm4"
 
 [display]
 
