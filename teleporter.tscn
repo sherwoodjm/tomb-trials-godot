@@ -6,6 +6,7 @@
 size = Vector2(16, 16)
 
 [node name="Teleporter" type="Area2D" unique_id=1803265028]
+collision_layer = 0
 script = ExtResource("1_eumkw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=155080669]

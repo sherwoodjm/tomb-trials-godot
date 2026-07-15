@@ -22,3 +22,8 @@ func _update_raycast() -> void:
 	if velocity != Vector2.ZERO:
 		$RayCast2D.target_position = velocity.normalized() * 16
 		$RayCast2D.force_raycast_update()
+
+
+func stop_movement() -> void:
+	player_controlled = false
+	velocity = Vector2.ZERO
