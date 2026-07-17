@@ -19,8 +19,9 @@ config/icon="res://icon.svg"
 [autoload]
 
 Main="*uid://i0px8put1jcp"
-Transition="*uid://can7wjkw2i0w1"
+Global="*uid://ckqf1m2pqmt7u"
 Dialogue="*uid://c2vawe0akqqm4"
+Transition="*uid://can7wjkw2i0w1"
 
 [display]
 

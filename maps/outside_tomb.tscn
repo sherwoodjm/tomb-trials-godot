@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bs57si7yn0lq5" path="res://map.gd" id="1_7jq7s"]
 [ext_resource type="TileSet" uid="uid://duu4rnss6bo0l" path="res://tilesets/desert_tomb.tres" id="2_3lys0"]
 [ext_resource type="PackedScene" uid="uid://dhar5irfq6om" path="res://teleporter.tscn" id="3_3lys0"]
+[ext_resource type="PackedScene" uid="uid://c7j5bynkk4j0d" path="res://treasure_chest.tscn" id="4_hu1g8"]
 
 [node name="Map" type="Node" unique_id=898079320]
 script = ExtResource("1_7jq7s")
@@ -55,3 +56,6 @@ polygon = PackedVector2Array(144, 168, 136, 168, 136, 392, 376, 392, 376, 168, 3
 [node name="Teleporter" parent="." unique_id=1803265028 instance=ExtResource("3_3lys0")]
 position = Vector2(264, 136)
 destination_position = Vector2(256, 256)
+
+[node name="TreasureChest" parent="." unique_id=329219902 instance=ExtResource("4_hu1g8")]
+position = Vector2(288, 192)

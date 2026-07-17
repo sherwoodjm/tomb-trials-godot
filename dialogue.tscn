@@ -9,6 +9,8 @@ RichTextLabel/colors/default_color = Color(0.13333334, 0.13333334, 0.13333334, 1
 RichTextLabel/fonts/normal_font = ExtResource("1_oi3j2")
 
 [node name="Dialogue" type="CanvasLayer" unique_id=1970777900]
+process_mode = 3
+visible = false
 script = ExtResource("1_758ep")
 
 [node name="Control" type="Control" parent="." unique_id=1808147997]
@@ -44,4 +46,6 @@ layout_mode = 2
 text = "This is a textbox with enough text to wrap around inside. Play it again."
 scroll_active = false
 
-[node name="Timer" type="Timer" parent="Control" unique_id=1578459358]
+[node name="Timer" type="Timer" parent="." unique_id=1578459358]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

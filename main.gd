@@ -11,18 +11,6 @@ func _ready() -> void:
 	Transition.fade_in(0.25)
 
 
-func _unhandled_key_input(event: InputEvent) -> void:
-	if event.is_action_pressed("key_interact"):
-		if not Dialogue.visible:
-			player.stop_movement()
-			Dialogue.show()
-			Dialogue.display_text("Hello world. This is an example of some dialogue happening.")
-			
-		#else:
-			#Dialogue.hide()
-			#player.player_controlled = true
-
-
 func teleport_player_to_position(pos) -> void:
 	get_tree().paused = true
 	await Transition.fade_out()

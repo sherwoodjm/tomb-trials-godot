@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://c7j5bynkk4j0d"]
+
+[ext_resource type="Texture2D" uid="uid://c3phr1m83ml27" path="res://sprites/treasure_chest.png" id="1_me2ib"]
+[ext_resource type="Script" uid="uid://hnhmr0dvtlmq" path="res://treasure_chest.gd" id="1_pc4nq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hs3rx"]
+size = Vector2(14, 12)
+
+[node name="TreasureChest" type="StaticBody2D" unique_id=329219902]
+script = ExtResource("1_pc4nq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=611036573]
+texture = ExtResource("1_me2ib")
+centered = false
+hframes = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=835126497]
+position = Vector2(8, 10)
+shape = SubResource("RectangleShape2D_hs3rx")
