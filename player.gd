@@ -29,13 +29,18 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		var collider = $RayCast2D.get_collider()
 		if collider:
 			if collider is TreasureChest and not collider.opened:
-				# Collect money!
-				collider.opened = true
-				Global.money += collider.total_money
-				Dialogue.set_text("You got %d gold!" % collider.total_money)
-				Dialogue.show()
+				collect_treasure(collider)
 
 
 func stop_movement() -> void:
 	player_controlled = false
 	velocity = Vector2.ZERO
+
+
+func collect_treasure(chest: TreasureChest) -> void:
+	var text = "You got %d gold!" % chest.total_money
+	chest.opened = true
+	Global.money += chest.total_money
+	Main.show_dialogue({
+		"text": text,
+	})

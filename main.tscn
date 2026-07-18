@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dehn3n3hpp0xx"]
+
+[ext_resource type="Script" uid="uid://i0px8put1jcp" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://c2vawe0akqqm4" path="res://dialogue.tscn" id="2_0xm2m"]
+
+[node name="Main" type="Node" unique_id=1558696017]
+script = ExtResource("1_ig7tw")
+
+[node name="Dialogue" parent="." unique_id=1970777900 instance=ExtResource("2_0xm2m")]
+visible = false
+
+[node name="Timer" type="Timer" parent="." unique_id=1028187890]

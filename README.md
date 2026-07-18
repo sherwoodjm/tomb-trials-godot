@@ -5,7 +5,7 @@
 - [x] Player movement
 - [x] Teleport player on map/between maps
 - [ ] Implement Dialogue Trees
-- [ ] Add Treasure boxes
+- [x] Add Treasure boxes
 - [ ] Add NPCs (optional)
 - [ ] Track total game time
 - [ ] Camera switches between characters

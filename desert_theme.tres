@@ -1,0 +1,10 @@
+[gd_resource type="Theme" format=3 uid="uid://jg1wq7n3kxg2"]
+
+[ext_resource type="FontFile" uid="uid://bw20tikc1sopk" path="res://Not Jam Mono Clean 11.ttf" id="1_l6ikb"]
+
+[resource]
+Label/constants/line_spacing = 0
+Label/font_sizes/font_size = 8
+Label/fonts/font = ExtResource("1_l6ikb")
+RichTextLabel/colors/default_color = Color(0.13333334, 0.13333334, 0.13333334, 1)
+RichTextLabel/fonts/normal_font = ExtResource("1_l6ikb")
